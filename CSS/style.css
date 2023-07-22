@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;700&family=Poppins:wght@400;700&display=swap');
+
+h1, h2, h3 {
+    font-family: 'Belanosima', sans-serif;
+}
+
+h1{
+    color: #EFF5F5;
+    background-color: #1f8a70;
+    text-shadow: 3px 3px 2px #00425A;
+}
+
+header h1 {
+    background-color: transparent;
+    text-shadow: 3px 3px 2px #FC7300;
+}
+
+h2, h3, h4{
+    color: #00425A;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+img {
+	Max-width: 100%
+}
+
+main{
+    background-color: #EFF5F5;
+}
+
+.quienessomos, .elegirnos{
+    display: grid;
+    grid-template-columns: auto auto;
+    color: #181823;
+    gap: 10px;
+    padding: 10px;
+}
+
+@media (max-width: 500px){
+    .quienessomos, .elegirnos{
+        grid-template-columns: 100%;
+    }
+}
+
+.propuesta{
+    display: flex;
+    padding: 10px;
+}
+
+.musica, .laboratorio, .deportes, .tecnologia{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.propuesta{
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    flex-direction: column;
+    background-color: #EFF5F5;
+}
+
+@media (min-width: 780px){
+    .propuesta {
+            flex-direction: row;
+        }
+    }
+
+.propuesta img{
+    Max-width: 80%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5em;
+    overflow:hidden;
+}
+
+.propuesta img:hover {-webkit-transform:scale(1.05);transform:scale(1.05);
+    }
+
+.noticias{
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 0;
+    flex-grow: 1;
+}
+
+.noticias p{
+    color: #181823;
+}
+
+article{
+    margin: 10px 20px 10px 20px;
+}
+
+.redes img:hover {-webkit-transform:scale(1.2);transform:scale(1.2);
+    }
+
+a {
+	Text-decoration: none;
+}
+
+nav {
+    top: 0;
+    background-color: #1f8a70;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #FC7300;
+}
+
+header {
+    display: flex;
+    align-items: end;
+    background-image: url('../img/fachada.jpg');
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    height: 15em;
+    overflow: hidden;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    flex-direction: column;
+    background-color: #EFF5F5;
+    padding: 10px; 
+}
+
+@media (min-width: 800px){
+    footer {
+            flex-direction: row;
+        }
+    }
+
+footer h3{
+    justify-content: center;
+    background-color: #1f8a70;
+    color: #181823;
+    text-shadow: 0.2px 0.2px 0.2px #FC7300;
+}
+
+footer div{
+    flex-basis: 0;
+    flex-grow: 1;
+}
+
+.redes {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+@media (max-width: 320px){
+    .redes, .noticias{
+        flex-direction: column;
+    }
+}
+ 
+ .contacto {
+    display: flex;
+    flex-direction: column;
+ }
+
+ .contacto a{
+    color: #181823;
+ }
+
+ .contacto a:hover {
+    color: #00425A;
+    -webkit-transform:scale(1.01);transform:scale(1.01);
+}
+
+ iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.mapa{
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+}

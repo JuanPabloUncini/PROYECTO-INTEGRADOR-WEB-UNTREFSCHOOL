@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;700&family=Poppins:wght@400;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+  }
+
+nav {
+    top: 0;
+    background-color: #1f8a70;
+}
+
+main{
+    color: #181823;
+    text-shadow: 1px 1px 1px #1f8a70;
+}

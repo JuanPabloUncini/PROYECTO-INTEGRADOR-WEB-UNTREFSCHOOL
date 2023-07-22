@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/formulario.css">
+    <link rel="stylesheet" href="index.html">
+
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+       <a class="nav-link active" aria-current="page" href="index.html">
+          <img src="img/logoinstitucional.png" alt="Logo" width="30" height="24">
+       </a>
+    </div>
+  </nav>
+
+    <main>
+      <div class="container">
+        <form action="https://formsubmit.co/uncini.juanpablo@gmail.com" method="post" autocomplete="on" enctype="multipart/form-data">
+        <input type="hidden" name="sitio" value="localhost" />
+
+        <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre completo" minlength="5" maxlength="20" required>
+          </div>
+        <div class="mb-3">
+        <label for="email" class="form-label">Correo electrónico</label>
+        <input type="email" class="form-control" id="email" placeholder="Ingrese su email" required>
+          </div>
+        <div class="mb-3">
+        <label for="comentario" class="form-label">Comentario</label>
+        <textarea class="form-control" id="comentario" rows="5" placeholder="Ingrese su comentario" maxlength="300" required></textarea>
+          </div>
+        <button type="submit" class="btn btn-success">Enviar</button>
+      </div>
+    </main>
+</body>
+</html>
